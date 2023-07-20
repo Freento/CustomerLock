@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <settings>
+        <buttons>
+            <button name="lock" class="Freento\CustomerLock\Block\Adminhtml\Edit\LockButton"/>
+            <button name="unlock" class="Freento\CustomerLock\Block\Adminhtml\Edit\UnlockButton"/>
+        </buttons>
+    </settings>
+</form>

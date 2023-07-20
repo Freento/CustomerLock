@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction" component="Magento_Ui/js/grid/tree-massactions">
+            <action name="customerlock">
+                <settings>
+                    <confirm>
+                        <message translate="true">Are you sure you want to lock the selected customers (customers with the same email or the same combination of first and last name also will be locked)?</message>
+                        <title translate="true">Lock customers</title>
+                    </confirm>
+                    <url path="customerlock/index/masslock"/>
+                    <type>customerlock</type>
+                    <label translate="true">Lock Customers</label>
+                </settings>
+            </action>
+            <action name="customerunlock">
+                <settings>
+                    <confirm>
+                        <message translate="true">Are you sure you want to unlock the selected customers (customers with the same email or the same combination of first and last name also will be unlocked)?</message>
+                        <title translate="true">Unlock customers</title>
+                    </confirm>
+                    <url path="customerlock/index/massunlock"/>
+                    <type>customerunlock</type>
+                    <label translate="true">Unlock Customers</label>
+                </settings>
+            </action>
+        </massaction>
+    </listingToolbar>
+</listing>
